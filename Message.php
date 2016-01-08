@@ -101,7 +101,19 @@ class Message extends BaseMessage
 
         return $this;
     }
+    
+    /**
+     * 添加Tag标志
+     *
+     * @param $tag
+     * @return $this
+     */
+    public function setTag($tag) {
+        $this->getMessageBuilder()->addTag($tag);
 
+        return $this;
+    }
+    
     /**
      * @inheritdoc
      */
